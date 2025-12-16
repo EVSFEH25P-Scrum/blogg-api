@@ -17,7 +17,6 @@ export async function createComment(content, postId, authorId) {
   if (result.rowCount !== 1) {
     throw new Error("Failed to save comment");
   }
-  // 123
-  // HEJ
+
   return result.rows[0];
 }
