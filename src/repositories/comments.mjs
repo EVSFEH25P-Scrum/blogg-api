@@ -18,5 +18,6 @@ export async function createComment(content, postId, authorId) {
     throw new Error("Failed to save comment");
   }
   // 123
+  // HEJ
   return result.rows[0];
 }
