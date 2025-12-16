@@ -1,0 +1,28 @@
+meta {
+  name: Create Blog Post
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/blogs
+  body: json
+  auth: inherit
+}
+
+headers {
+  username: Bruce
+  password: batman123
+}
+
+body:json {
+  {
+    "title": "Inlägg 4",
+    "content": "Idag ska vi bygga ett blogg-projekt!"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

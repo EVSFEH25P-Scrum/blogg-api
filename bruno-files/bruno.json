@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "bu1-blogg-api",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

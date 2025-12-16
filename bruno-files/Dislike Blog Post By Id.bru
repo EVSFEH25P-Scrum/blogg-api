@@ -1,0 +1,28 @@
+meta {
+  name: Dislike Blog Post By Id
+  type: http
+  seq: 9
+}
+
+patch {
+  url: http://localhost:3000/api/blogs/:postId/dislike
+  body: none
+  auth: inherit
+}
+
+params:path {
+  postId: 2
+}
+
+body:json {
+  {
+    "title": "Vi bygger projekt idag",
+    "content": "Idag ska vi bygga ett blogg-projekt! Nu har vi implementerat nästan alla CRUD funktioner!",
+    "author": "Ironman"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

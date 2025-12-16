@@ -1,0 +1,23 @@
+meta {
+  name: Create User
+  type: http
+  seq: 10
+}
+
+post {
+  url: http://localhost:3000/api/users
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "username": "Bruce",
+    "password": "batman123"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

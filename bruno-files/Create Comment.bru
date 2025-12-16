@@ -1,0 +1,28 @@
+meta {
+  name: Create Comment
+  type: http
+  seq: 13
+}
+
+post {
+  url: http://localhost:3000/api/comments
+  body: json
+  auth: inherit
+}
+
+headers {
+  username: Bruce
+  password: batman123
+}
+
+body:json {
+  {
+    "postId": 2,
+    "content": "Hej igen!"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

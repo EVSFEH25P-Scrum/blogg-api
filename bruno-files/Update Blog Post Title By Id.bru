@@ -1,0 +1,26 @@
+meta {
+  name: Update Blog Post Title By Id
+  type: http
+  seq: 10
+}
+
+patch {
+  url: http://localhost:3000/api/blogs/:postId/title
+  body: json
+  auth: inherit
+}
+
+params:path {
+  postId: 2
+}
+
+body:json {
+  {
+    "title": "Vi bygger projekt idag, yay!"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
